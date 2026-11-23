@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2f7d5b"/><stop offset="1" stop-color="#154030"/></linearGradient></defs>
+<rect width="1600" height="1000" fill="url(#g)"/>
+<rect x="96.0" y="80.0" width="1408.0" height="840.0" rx="18" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="3" stroke-dasharray="14 10"/>
+<text x="50%" y="460.0" text-anchor="middle" font-family="Georgia,serif" font-size="70.0" fill="#fff">VoltRent</text>
+<text x="50%" y="560.0" text-anchor="middle" font-family="monospace" font-size="32.0" fill="#fff" fill-opacity=".85">Screenshot 3 of 3 - 1600 x 1000</text>
+<text x="50%" y="860.0" text-anchor="middle" font-family="monospace" font-size="26.0" fill="#fff" fill-opacity=".7">SAMPLE IMAGE - replace this file with your own</text>
+</svg>
