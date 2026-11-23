@@ -71,7 +71,7 @@
       S.experience.map(function (j) {
         return '<article class="job rv" id="job-' + j.id + '"><div class="meta">' + esc(j.when) + " · " + esc(j.where) + "</div><h3>" + esc(j.role) + " — " + esc(j.org) + '</h3><p class="sum">' + esc(j.summary) + '</p><button class="more">Show details</button><ul>' + j.bullets.map(function (b) { return "<li>" + esc(b) + "</li>"; }).join("") + "</ul>" + tags(j.stack) + "</article>";
       }).join("") + '<a class="more-link rv" href="volunteer.html">See my volunteer experience →</a></div></section>';
-    h += '<section id="work"><div class="wrap"><div class="eyebrow rv">Selected work</div><h2 class="rv">Four things worth opening</h2><p class="section-lead rv">Each one has a write-up with highlights, stack and links.</p>' +
+    h += '<section id="work"><div class="wrap"><div class="eyebrow rv">Selected work</div><h2 class="rv">Projects worth opening</h2><p class="section-lead rv">Each one has a write-up with highlights, stack and links.</p>' +
       S.projects.map(function (p) {
         var th = p.shots && p.shots.length ? imgTag(p.shots[0], p.title + " screenshot") : '<div class="ph"><b>' + esc(p.title) + "</b><span>screenshot coming soon</span></div>";
         var links = linkIf(p.demo, "Live demo", "primary") + linkIf(p.repo, "GitHub");
