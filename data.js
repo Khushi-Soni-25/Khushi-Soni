@@ -75,77 +75,243 @@ window.SITE = {
      demo = your deployed/live URL, repo = your GitHub repo URL (leave "" to hide the button).
      shots = up to any number of screenshots (sample files are in assets/projects). */
   projects: [
-    {
-      slug: "projectpilot-ai", num: "01", year: "2026", type: "Product",
-      title: "ProjectPilot AI", tagline: "AI/ML project recommendation system",
-      blurb: "Suggests student projects based on domain, skills, interests and timeline.",
-      badge: "",
-      bullets: [
-        "Developed an AI/ML-based recommendation platform that suggests student projects based on domain, skills, interests and timeline using TF-IDF and cosine similarity.",
-        "Processed 3,300+ project records using Python, Pandas, NumPy and Scikit-learn to generate personalized project roadmaps with relevant skills, datasets, APIs and learning resources."
-      ],
-      stack: ["Python", "Pandas", "NumPy", "Scikit-learn", "TF-IDF"],
-      demo: "https://pilotai-platform.vercel.app/",   // deployed link, e.g. "https://projectpilot.example.com"
-      repo: "https://github.com/Khushi-Soni-25/Project-Pilot-AI.git",   // GitHub link, e.g. "https://github.com/you/projectpilot-ai"
-      shots: ["assets/projects/P1.jpeg","assets/projects/P2.png","assets/projects/P3.png","assets/projects/P4.png","assets/projects/P5.png","assets/projects/P6.png","assets/projects/P7.png","assets/projects/P8.png"]    
-    },
-    {
-      slug: "scholar-bridge", num: "02", year: "2026", type: "AI / ML",
-      title: "Scholar Bridge",
-      tagline: "AI-powered scholarship recommendation engine",
-      blurb: "An intelligent platform that helps students discover scholarships through personalized eligibility matching and hybrid AI recommendations.",
-      badge: "Ongoing",
-      bullets: [
-        "Developed an AI-powered scholarship recommendation platform using Python, FastAPI, and MongoDB, helping students discover relevant scholarship opportunities based on their academic profiles and eligibility criteria.",
-        "Implemented rule-based eligibility matching, Random Forest machine learning, NLP-based similarity analysis, and hybrid recommendation ranking to deliver personalized scholarship recommendations with transparent eligibility explanations."
-      ],
-      stack: ["Python", "FastAPI", "MongoDB", "Machine Learning", "NLP"],
-      demo: "https://scholar-bridge-aicw.vercel.app/",
-      repo: "https://github.com/Khushi-Soni-25/Scholar-Bridge.git",
-      shots: ["assets/projects/S1.png","assets/projects/S2.png","assets/projects/S3.png","assets/projects/S4.png","assets/projects/S5.png","assets/projects/S6.png","assets/projects/S7.png"]
-    },
-    {
-      slug: "voltrent", num: "03", year: "Ongoing", type: "Product",
-      title: "VoltRent", tagline: "EV battery rental system",
-      blurb: "Battery rental and emergency delivery connecting users, dealers and delivery services.",
-      badge: "",
-      bullets: [
-        "Developed an EV battery rental and emergency delivery platform connecting users, dealers and delivery services using PHP, Python and MySQL.",
-        "Integrated AI/ML modules for battery health assessment, demand prediction, and intelligent battery/dealer recommendations."
-      ],
-      stack: ["PHP", "Python", "MySQL", "Machine Learning"],
-      demo: "https://rent-a-volt.vercel.app/",
-      repo: "https://github.com/Khushi-Soni-25/VoltRent.git",
-      shots: ["assets/projects/EV.jpeg","assets/projects/E1.png","assets/projects/E2.png","assets/projects/E3.png","assets/projects/E4.png","assets/projects/E5.png","assets/projects/E6.png","assets/projects/E7.png","assets/projects/E8.png","assets/projects/E9.png","assets/projects/E10.png","assets/projects/E11.png"]
-    },
-    {
-      slug: "lawyer-ai", num: "04", year: "2026", type: "System",
-      title: "Lawyer AI", tagline: "AI-powered legal assistance platform",
-      blurb: "A full-stack legal assistant with grounded, retrieval-based answers.",
-      badge: "",
-      bullets: [
-        "Developed a full-stack legal assistance platform featuring user authentication, multi-turn chat, document uploads, password reset, chat history and grounded legal information retrieval.",
-        "Implemented PDF/text extraction with OCR fallback and RAG-based retrieval to generate context-aware responses using available legal information."
-      ],
-      stack: ["Python", "FastAPI", "RAG", "NLP", "OCR"],
-      demo: "",
-      repo: "https://github.com/Khushi-Soni-25/Lawyer_AI.git",
-      shots: ["assets/projects/Lawyer_AI.png"]
-    },
-    {
-      slug: "bs-engitech", num: "05", year: "2023", type: "Product",
-      title: "BS EngiTech Store", tagline: "E-commerce platform for engineering parts",
-      blurb: "A full-stack store for precision engineering parts with server-side pricing.",
-      badge: "",
-      bullets: [
-        "Developed a full-stack e-commerce platform for precision engineering parts, featuring a 21-product catalogue across 6 categories, search, filters, sorting, product pages, a persistent cart, checkout, and a custom-quote request form.",
-        "Implemented bulk-quantity discounts, GST and delivery-charge calculation on the server, with transactional order placement and stock locking so prices and stock cannot be tampered with from the browser."
-      ],
-      stack: ["HTML", "CSS", "JavaScript", "PHP", "MongoDB"],
-      demo: "https://bsengitech.vercel.app/",
-      repo: "https://github.com/Khushi-Soni-25/BS-EngiTech.git",
-      shots: ["assets/projects/BS.png","assets/projects/B1.png","assets/projects/B2.png","assets/projects/B3.png","assets/projects/B4.png","assets/projects/B5.png","assets/projects/B6.png","assets/projects/B7.png","assets/projects/B8.png"]
-    }
+    
+{
+  slug: "projectpilot-ai",
+  num: "01",
+  year: "2026",
+  type: "Product",
+  title: "ProjectPilot AI",
+  tagline: "AI-Powered Project Recommendation System",
+
+  blurb: "An intelligent project recommendation platform that helps students discover suitable projects based on their skills, interests, preferred domains, and available development time.",
+
+  badge: "",
+
+  bullets: [
+    "Problem Statement: Students often struggle to identify relevant project ideas that align with their technical skills, interests, experience levels, and available development time.",
+
+    "Proposed Solution: Developed an AI/ML-powered recommendation platform that analyzes user preferences and suggests personalized project ideas with relevance scores and implementation guidance.",
+
+    "Implementation: Processed 3,300+ project records across 22 domains using Python, Pandas, NumPy, and Scikit-learn. Implemented TF-IDF vectorization and cosine similarity to generate ranked, personalized recommendations.",
+
+    "Key Features: Provides project match scores, required technical skills, technology recommendations, relevant datasets, APIs, libraries, learning resources, and structured project development roadmaps."
+  ],
+
+  stack: [
+    "Python",
+    "Pandas",
+    "NumPy",
+    "Scikit-learn",
+    "TF-IDF",
+    "Cosine Similarity",
+    "NLP",
+    "FastAPI",
+    "MongoDB"
+  ],
+
+  demo: "https://pilotai-platform.vercel.app/",
+
+  repo: "https://github.com/Khushi-Soni-25/Project-Pilot-AI.git",
+
+  shots: [
+    "assets/projects/P1.jpeg",
+    "assets/projects/P2.png",
+    "assets/projects/P3.png",
+    "assets/projects/P4.png",
+    "assets/projects/P5.png",
+    "assets/projects/P6.png",
+    "assets/projects/P7.png",
+    "assets/projects/P8.png"
+  ]
+},
+
+    
+{
+  slug: "scholar-bridge",
+  num: "02",
+  year: "2026",
+  type: "AI / ML",
+  title: "Scholar Bridge",
+  tagline: "AI-Powered Scholarship Recommendation Engine",
+
+  blurb: "An intelligent scholarship recommendation platform that helps students discover suitable financial aid opportunities through personalized eligibility assessment and hybrid AI-based recommendations.",
+
+  badge: "Ongoing",
+
+  bullets: [
+    "Problem Statement: Students often struggle to find suitable scholarships due to complex eligibility criteria, scattered information, and difficulty identifying opportunities that match their academic profiles.",
+
+    "Proposed Solution: Developing an AI-powered scholarship recommendation platform that analyzes students' academic profiles, financial backgrounds, and eligibility requirements to suggest relevant scholarship opportunities.",
+
+    "Implementation: Developed the backend using Python and FastAPI with MongoDB for data management. Implemented rule-based eligibility matching, Random Forest machine learning, and NLP-based similarity analysis to evaluate and rank scholarship opportunities.",
+
+    "Key Features: Personalized scholarship recommendations, eligibility-based filtering, hybrid recommendation ranking, academic profile matching, and transparent eligibility explanations to help students understand why they qualify for specific scholarships."
+  ],
+
+  stack: [
+    "Python",
+    "FastAPI",
+    "MongoDB",
+    "Random Forest",
+    "Machine Learning",
+    "NLP",
+    "Rule-Based Matching"
+  ],
+
+  demo: "https://scholar-bridge-aicw.vercel.app/",
+
+  repo: "https://github.com/Khushi-Soni-25/Scholar-Bridge.git",
+
+  shots: [
+    "assets/projects/S1.png",
+    "assets/projects/S2.png",
+    "assets/projects/S3.png",
+    "assets/projects/S4.png",
+    "assets/projects/S5.png",
+    "assets/projects/S6.png",
+    "assets/projects/S7.png"
+  ]
+},
+
+
+{
+  slug: "voltrent",
+  num: "03",
+  year: "Ongoing",
+  type: "Product",
+  title: "VoltRent",
+  tagline: "AI-Powered EV Battery Rental & Delivery System",
+
+  blurb: "An EV battery rental and emergency delivery platform connecting electric vehicle users, battery dealers, and delivery services through an integrated rental ecosystem.",
+
+  badge: "",
+
+  bullets: [
+    "Problem Statement: EV users may face battery shortages, charging delays, and limited access to replacement batteries, particularly during unexpected situations and long-distance travel.",
+
+    "Proposed Solution: Developing VoltRent, an integrated EV battery rental and emergency delivery platform that connects users with battery dealers and delivery services for convenient battery access.",
+
+    "Implementation: Developed the platform using PHP, Python, and MySQL, integrating AI/ML modules for battery health assessment, demand prediction, and intelligent battery and dealer recommendations.",
+
+    "Key Features: EV battery rental management, dealer connectivity, emergency battery delivery, battery health assessment, demand forecasting, and intelligent battery/dealer recommendations."
+  ],
+
+  stack: [
+    "PHP",
+    "Python",
+    "MySQL",
+    "Machine Learning",
+    "AI/ML"
+  ],
+
+  demo: "https://rent-a-volt.vercel.app/",
+
+  repo: "https://github.com/Khushi-Soni-25/VoltRent.git",
+
+  shots: [
+    "assets/projects/EV.jpeg",
+    "assets/projects/E1.png",
+    "assets/projects/E2.png",
+    "assets/projects/E3.png",
+    "assets/projects/E4.png",
+    "assets/projects/E5.png",
+    "assets/projects/E6.png",
+    "assets/projects/E7.png",
+    "assets/projects/E8.png",
+    "assets/projects/E9.png",
+    "assets/projects/E10.png",
+    "assets/projects/E11.png"
+  ]
+},
+
+{
+  slug: "lawyer-ai",
+  num: "04",
+  year: "2026",
+  type: "System",
+  title: "Lawyer AI",
+  tagline: "AI-Powered Legal Assistance Platform",
+
+  blurb: "An AI-powered legal assistance platform that provides context-aware responses through document analysis and retrieval-augmented generation (RAG).",
+
+  badge: "",
+
+  bullets: [
+    "Problem Statement: Understanding legal information and finding relevant answers from lengthy legal documents can be difficult and time-consuming for users without legal expertise.",
+
+    "Proposed Solution: Developed an AI-powered legal assistance platform that enables users to interact with legal information through conversational chat and document-based queries, providing responses grounded in available legal sources.",
+
+    "Implementation: Built a full-stack backend using Python, FastAPI, and MongoDB with LLM API integration. Implemented PDF/text extraction, OCR fallback for scanned documents, and RAG-based retrieval for context-aware legal responses.",
+
+    "Key Features: User authentication, multi-turn conversational chat, legal document uploads, password reset, chat history, PDF/text extraction, OCR fallback, and retrieval-based legal question answering."
+  ],
+
+  stack: [
+    "Python",
+    "FastAPI",
+    "MongoDB",
+    "RAG",
+    "NLP",
+    "OCR",
+    "LLM Integration"
+  ],
+
+  demo: "",
+
+  repo: "https://github.com/Khushi-Soni-25/Lawyer_AI.git",
+
+  shots: [
+    "assets/projects/Lawyer_AI.png"
+  ]
+},
+
+{
+  slug: "bs-engitech",
+  num: "05",
+  year: "2023",
+  type: "Product",
+  title: "BS EngiTech Store",
+  tagline: "Full-Stack Engineering Parts E-Commerce Platform",
+
+  blurb: "A full-stack e-commerce platform for precision engineering parts, featuring product discovery, dynamic pricing, secure cart management, and server-side order processing.",
+
+  badge: "",
+
+  bullets: [
+    "Problem Statement: Purchasing precision engineering components often involves limited online product discovery, manual quotation requests, and complex bulk-pricing calculations, making the buying process less efficient.",
+
+    "Proposed Solution: Developed a dedicated e-commerce platform that simplifies engineering parts purchasing through an organized product catalogue, advanced search and filtering, persistent cart management, checkout, and custom quotation requests.",
+
+    "Implementation: Built using HTML, CSS, JavaScript, PHP, and MongoDB. Implemented server-side bulk-quantity discounts, GST and delivery-charge calculations, transactional order placement, and stock locking to ensure reliable pricing and inventory management.",
+
+    "Key Features: 21 products across 6 categories, product search, filtering, sorting, detailed product pages, persistent shopping cart, checkout, custom quote requests, bulk discounts, GST calculation, delivery charges, and secure stock management."
+  ],
+
+  stack: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "PHP",
+    "MongoDB"
+  ],
+
+  demo: "https://bsengitech.vercel.app/",
+
+  repo: "https://github.com/Khushi-Soni-25/BS-EngiTech.git",
+
+  shots: [
+    "assets/projects/BS.png",
+    "assets/projects/B1.png",
+    "assets/projects/B2.png",
+    "assets/projects/B3.png",
+    "assets/projects/B4.png",
+    "assets/projects/B5.png",
+    "assets/projects/B6.png",
+    "assets/projects/B7.png",
+    "assets/projects/B8.png"
+  ]
+},
   ],
 
   /* ---- EDUCATION (plain list, no images) ---- */
