@@ -87,7 +87,7 @@ window.SITE = {
       stack: ["Python", "Pandas", "NumPy", "Scikit-learn", "TF-IDF"],
       demo: "https://pilotai-platform.vercel.app/",   // deployed link, e.g. "https://projectpilot.example.com"
       repo: "https://github.com/Khushi-Soni-25/Project-Pilot-AI.git",   // GitHub link, e.g. "https://github.com/you/projectpilot-ai"
-      shots: "assets/projects/project_Pilot.jpeg"    
+      shots: ["assets/projects/P1.jpeg","assets/projects/P2.png","assets/projects/P3.png","assets/projects/P4.png","assets/projects/P5.png","assets/projects/P6.png","assets/projects/P7.png","assets/projects/P8.png"]    
     },
     {
       slug: "scholar-bridge", num: "02", year: "2026", type: "AI / ML",
@@ -102,11 +102,7 @@ window.SITE = {
       stack: ["Python", "FastAPI", "MongoDB", "Machine Learning", "NLP"],
       demo: "https://scholar-bridge-aicw.vercel.app/",
       repo: "https://github.com/Khushi-Soni-25/Scholar-Bridge.git",
-      shots: [
-        "assets/projects/scholar-bridge-1.svg",
-        "assets/projects/scholar-bridge-2.svg",
-        "assets/projects/scholar-bridge-3.svg"
-      ]
+      shots: ["assets/projects/S1.png","assets/projects/S2.png","assets/projects/S3.png","assets/projects/S4.png","assets/projects/S5.png","assets/projects/S6.png","assets/projects/S7.png"]
     },
     {
       slug: "voltrent", num: "03", year: "Ongoing", type: "Product",
@@ -120,7 +116,7 @@ window.SITE = {
       stack: ["PHP", "Python", "MySQL", "Machine Learning"],
       demo: "https://rent-a-volt.vercel.app/",
       repo: "https://github.com/Khushi-Soni-25/VoltRent.git",
-      shots: "assets/projects/EV.jpeg"
+      shots: ["assets/projects/EV.jpeg","assets/projects/E1.png","assets/projects/E2.png","assets/projects/E3.png","assets/projects/E4.png","assets/projects/E5.png","assets/projects/E6.png","assets/projects/E7.png","assets/projects/E8.png","assets/projects/E9.png","assets/projects/E10.png","assets/projects/E11.png"]
     },
     {
       slug: "lawyer-ai", num: "04", year: "2026", type: "System",
@@ -134,7 +130,7 @@ window.SITE = {
       stack: ["Python", "FastAPI", "RAG", "NLP", "OCR"],
       demo: "",
       repo: "https://github.com/Khushi-Soni-25/Lawyer_AI.git",
-      shots: "assets/projects/Lawyer_AI.png"
+      shots: ["assets/projects/Lawyer_AI.png"]
     },
     {
       slug: "bs-engitech", num: "05", year: "2023", type: "Product",
@@ -148,7 +144,7 @@ window.SITE = {
       stack: ["HTML", "CSS", "JavaScript", "PHP", "MongoDB"],
       demo: "https://bsengitech.vercel.app/",
       repo: "https://github.com/Khushi-Soni-25/BS-EngiTech.git",
-      shots: "assets/projects/BS.png"
+      shots: ["assets/projects/BS.png","assets/projects/B1.png","assets/projects/B2.png","assets/projects/B3.png","assets/projects/B4.png","assets/projects/B5.png","assets/projects/B6.png","assets/projects/B7.png","assets/projects/B8.png"]
     }
   ],
 
@@ -189,10 +185,10 @@ window.SITE = {
      To add one, copy a { ... }, block and paste it below.
      img and link are optional (delete the line or leave "" to hide). */
   certifications: [
-    { title: "AI Career for Women (AICW)", place: "Microsoft", meta: "Ongoing", img: "assets/certs/cert-1.svg", link: "" },
-    { title: "Industry-Led Minor/Honors Course in AI/ML", place: "Infosys Springboard · G.T.U.", meta: "Ongoing", img: "assets/certs/cert-2.svg", link: "" },
-    { title: "Explore Machine Learning using Python", place: "Infosys Springboard", meta: "", img: "assets/certs/cert-3.svg", link: "" },
-    { title: "Introduction to Generative AI", place: "Google Cloud via Coursera & Simplilearn", meta: "", img: "assets/certs/cert-4.svg", link: "" }
+    { title: "AI Career for Women (AICW)", place: "Microsoft", meta: "Ongoing", link: "" },
+    { title: "Industry-Led Minor/Honors Course in AI/ML", place: "Infosys Springboard · G.T.U.", meta: "Ongoing", link: "" },
+    { title: "Explore Machine Learning using Python", place: "Infosys Springboard", meta: "", link: "" },
+    { title: "Introduction to Generative AI", place: "Google Cloud via Coursera & Simplilearn", meta: "", link: "" }
   ],
 
   /* ---- VOLUNTEER EXPERIENCE (shown on volunteer.html) ----
