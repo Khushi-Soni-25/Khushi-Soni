@@ -28,7 +28,7 @@
     nav.innerHTML = '<div class="wrap"><a class="logo" href="' + (isHome ? "#top" : "index.html") + '">' + esc(S.initials) + "</a>" +
       '<ul id="links">' + LINKS.map(function (l) { return '<li><a data-id="' + l[0] + '" href="' + href(l[0]) + '">' + l[1] + "</a></li>"; }).join("") + "</ul>" +
       '<button class="themebtn" id="themeBtn"></button>' +
-      '<a class="btn resume-btn" href="' + S.resume + '" download> PDF ↓</a>' +
+      '<a class="btn resume-btn" href="' + S.resume + '" download> Resume PDF ↓</a>' +
       '<button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button></div>';
     document.body.prepend(nav);
     $("#menuBtn").onclick = function () { $("#links").classList.toggle("open"); };
