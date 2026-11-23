@@ -28,7 +28,7 @@
     nav.innerHTML = '<div class="wrap"><a class="logo" href="' + (isHome ? "#top" : "index.html") + '">' + esc(S.initials) + "</a>" +
       '<ul id="links">' + LINKS.map(function (l) { return '<li><a data-id="' + l[0] + '" href="' + href(l[0]) + '">' + l[1] + "</a></li>"; }).join("") + "</ul>" +
       '<button class="themebtn" id="themeBtn"></button>' +
-      '<a class="btn resume-btn" href="' + S.resume + '" download>Résumé PDF ↓</a>' +
+      '<a class="btn resume-btn" href="' + S.resume + '" download> PDF ↓</a>' +
       '<button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button></div>';
     document.body.prepend(nav);
     $("#menuBtn").onclick = function () { $("#links").classList.toggle("open"); };
@@ -81,7 +81,7 @@
     h += '<section id="education"><div class="wrap"><div class="eyebrow rv">Education</div><h2 class="rv">Where I studied</h2>' + stack(S.education) + "</div></section>";
     h += '<section id="awards"><div class="wrap"><div class="eyebrow rv">Awards &amp; activities</div><h2 class="rv">Recognition</h2>' + stack(S.awards) + "</div></section>";
     h += '<section id="certifications"><div class="wrap"><div class="eyebrow rv">Certifications</div><h2 class="rv">Courses &amp; certificates</h2>' + stack(S.certifications) + "</div></section>";
-    var social = linkIf(S.github, "GitHub") + linkIf(S.linkedin, "LinkedIn") + '<a class="btn" href="' + S.resume + '" download>Résumé ↓</a>';
+    var social = linkIf(S.github, "GitHub") + linkIf(S.linkedin, "LinkedIn") + '<a class="btn" href="' + S.resume + '" download>Resume ↓</a>';
     h += '<section id="contact" class="contact"><div class="wrap"><div class="eyebrow rv">Contact</div><h2 class="rv">Let\'s build <i>something.</i></h2><p class="rv">Open to internships and interesting problems in AI/ML. Email is the fastest way to reach me.</p><a class="mail rv" href="mailto:' + S.email + '">' + S.email + '</a><div class="row rv">' + social + "</div></div></section>";
     $("#app").innerHTML = h;
 
